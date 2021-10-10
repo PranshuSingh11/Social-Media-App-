@@ -1,0 +1,330 @@
+body,html{
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.App {
+  text-align: center;
+}
+
+.navbar {
+  border-bottom: 1px solid grey;
+}
+
+main {
+  width: 50%;
+  margin: auto;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.head {
+  display: flex;
+  margin: 15px;
+}
+
+.image {
+  font-size: 20px;
+}
+
+.username {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.body {
+  height: auto;
+}
+
+
+
+.foot {
+  display: flex;
+  margin: 15px;
+  margin-bottom: 0px;
+}
+
+.like {
+  cursor: pointer;
+}
+.comment {
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.caption {
+  text-align: left;
+  margin: 15px;
+}
+
+#profile-cont{
+  height: 25vh;
+  margin: auto;
+  width: 60%;
+  padding: 12px;
+}
+
+.profile-pic{
+  border: 1px solid gray;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+}
+
+.profile-pic-default{
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  overflow: hidden;
+  width: 80%;
+  margin: auto;
+}
+
+.grid-item{
+  object-fit: cover;
+  
+}
+
+.post-cont{
+  position: relative;
+  width: auto;
+}
+
+.posts{
+  margin: auto;
+  height: 200px;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.post-stats{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;   
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.post-stats:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.addcomment{
+  display: flex;
+  justify-content: left;
+}
+
+#commentinput{
+  width: 95%;
+}
+
+.addcomment{
+  margin:15px;
+  text-align:left
+}
+
+.loginImg{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  margin: auto;
+  height: auto;
+}
+ 
+.registerImg{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  margin: auto;
+  height: auto;
+}
+
+#stats{
+  margin-top: center;
+  margin-bottom: center;
+}
+
+#res-stats{
+  display: none;
+}
+
+.post-stats-item{
+  padding: 25px;
+}
+
+#notfoundImg{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+#notfoundText{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.popoverbody{
+  height: 150px;
+  width: 200px;
+  overflow-y: scroll;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  main {
+    width: 80%;
+  }
+  #profile-cont{
+    width: 80%;
+    height: 20vh;
+  }
+  .profile-pic{
+    height:120px ;
+    width: 120px;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .loginImg{
+    height: 170px;
+  }
+  .registerImg{
+    height: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  main {
+    width: 100%;
+  }
+  #profile-cont{
+    width: 100%;
+    height: 15vh;
+  }
+  .profile-pic{
+    height: 90px;
+    width: 90px;
+  }
+  .posts{
+    height: 100px;
+    padding: 1px;
+  }
+  .loginImg{
+    height: 100px;
+  }
+  .registerImg{
+    height: 80px;
+  }
+  #stats{
+    display: none;
+  }
+  #res-stats{
+    display: block;
+  }
+  #user-stats{
+    display: none;
+  }
+  .post-stats-item{
+    padding: 5px;
+  }
+  #notfoundImg{
+   height: 200px;
+   width: 150px;
+  }
+
+}
+
+@media (max-height: 670px) {
+
+  .loginImg{
+    display: none;
+  }
+  .registerImg{
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+
+  #profile-cont{
+    width: 100%;
+    height: 16vh;
+  }
+  .profile-pic{
+    height: 80px;
+    width: 80px;
+  }
+}
+
+
+@media (max-width: 300px) {
+
+  #profile-cont{
+    width: 100%;
+  }
+  .profile-pic{
+    height: 70px;
+    width: 70px;
+  }
+}
+
+#logo{
+  margin-top: 5px;
+}
+
+/* .form-container{
+  border: 1px solid black;
+  box-shadow: 0 8px 6px -6px black;
+  border-radius: 20px;
+  width: 25%;
+  margin: auto;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 60%;
+} */
+
+#form{
+  margin: auto;
+} 
+
+label{
+  color: #F50057;
+}
